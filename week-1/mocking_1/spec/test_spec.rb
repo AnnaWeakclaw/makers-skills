@@ -4,9 +4,9 @@ require 'answer'
 describe Test do
   let(:answers) do
     [
-      Answer.new(5, 5),
-      Answer.new(7, 7),
-      Answer.new(1, 1)
+      double(:answer1, :correct? => true),
+      double(:answer2, :correct? => true),
+      double(:answer3, :correct? => true)
     ]
   end
 
