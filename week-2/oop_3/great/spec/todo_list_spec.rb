@@ -24,4 +24,12 @@ describe TodoList do
       expect(subject.get(0)).to_not be_nil
     end
   end
+
+  describe "completing a todo" do
+    it "ask the task to be completed" do
+      subject.add("say hi", todo_class)
+      expect(todo).to receive(:completed?) { true }
+      expect(subject.set_complete(0)).to be true
+    end
+  end
 end

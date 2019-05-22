@@ -13,6 +13,16 @@ class TodoList
     all[index]
   end
 
+  def set_complete(index)
+    get(index).completed?
+  end
+
+  def to_string
+    all.each_with_index.map { |todo, index|
+      "#{index + 1}. #{todo.description} #{todo.completion_to_string}"
+    }.join("\n")
+  end
+
   private
 
   def all
