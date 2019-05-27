@@ -1,8 +1,9 @@
 class LibraryItem
 
-  def initialize(title)
+  def initialize(title, author = Author)
     @title = title
     @on_loan = false
+    @author = author
   end
   def on_loan?
     @on_loan

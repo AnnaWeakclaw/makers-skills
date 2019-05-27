@@ -35,5 +35,9 @@ describe Article do
     it 'raises an error if the article is not on loan' do
       expect{ article.check_in }.to raise_error('item is not currently on loan')
     end
+
+    it 'has an author' do
+      expect(article.my_author("Makers", 44208126831)).to be_a_kind_of(Author)
+    end
   end
 end

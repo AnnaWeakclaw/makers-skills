@@ -36,5 +36,9 @@ describe Book do
     it 'raises an error if the book is not on loan' do
       expect{ book.check_in }.to raise_error('item is not currently on loan')
     end
+
+    it 'has an author' do
+      expect(book.my_author("Makers", 44208126831)).to be_a_kind_of(Author)
+    end
   end
 end
