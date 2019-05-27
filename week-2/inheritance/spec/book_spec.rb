@@ -1,4 +1,5 @@
 require 'book'
+require 'libraryItem'
 
 describe Book do
   let (:book)   { described_class.new('My Lovely Book') }
