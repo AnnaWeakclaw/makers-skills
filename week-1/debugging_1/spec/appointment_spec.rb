@@ -14,6 +14,8 @@ describe Appointment do
 
   describe '#pretty_location' do
     it 'pretty-prints the location' do
+      puts appointment.geocoder
+      puts "*******"
       expect(appointment.pretty_location).to include "E1 6LT"
     end
   end
