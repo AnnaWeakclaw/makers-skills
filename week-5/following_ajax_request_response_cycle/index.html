@@ -5,7 +5,19 @@
 
     <script>
       $.get("https://async-workshops-api.herokuapp.com/people", function(peopleResponse) {
+        console.log(peopleResponse);
+        console.log(peopleResponse[0].name);
+        console.log(peopleResponse[1].name);
+        console.log(peopleResponse[2].name);
         $("#person").html(peopleResponse[0].name);
+        $("#person").html(peopleResponse[2].name);
+        $("#person").html(peopleResponse[3].name);
+        $("#person").html(peopleResponse[0].name);
+        $("#person").html(peopleResponse[1].name);
+        $("#person").html(peopleResponse[1].name);
+        $("#person").html(peopleResponse[3].name);
+        $("#person").html(peopleResponse[0].name);
+
       });
     </script>
   </head>

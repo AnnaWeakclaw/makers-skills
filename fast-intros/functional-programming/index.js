@@ -50,3 +50,15 @@ console.log(total);
 console.log([1, 2, 3, 4].reduce(function(sum, number) {
   return sum + number;
 }, 0));
+
+//Functional - add ! to every element
+
+console.log(["Mary", "Lauren", "Isla"].map(function(word) {
+  return word + '!';
+}));
+
+//Functional - filter
+arr = ["Mary read a story to Lauren and Isla.", "Lauren cuddled Isla.", "Isla chortled."];
+firstFilter = arr.filter(sentence => sentence.include?("Isla"));
+  
+
